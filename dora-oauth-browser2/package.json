@@ -1,0 +1,43 @@
+{
+  "author": {
+    "name": "littleGauze",
+    "email": "810483824@qq.com"
+  },
+  "version": "1.0",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "",
+  "dependencies": {
+    "dora-oauth-utils": "0.0.2",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^4.2.0",
+    "mocha": "^3.4.1",
+    "request": "^2.81.0",
+    "sinon": "^2.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "oauth2"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "dora-oauth-browser2",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becooltech/oauth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/becooltech/oauth/issues"
+  },
+  "homepage": "https://github.com/becooltech/oauth#readme"
+}
