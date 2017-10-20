@@ -132,13 +132,14 @@ OAuth.prototype._callSuper = function () {
     return Super.prototype[method].apply(this, args);
 };
 
-OAuth.prototype.encodeState = function (options = {}) {
-    let state = [];
+OAuth.prototype.encodeState = function (options) {
+options = options || {};
+    var state = [];
 
-    for (let key of Object.keys(options)) {
-        if (options[key]) state.push(`${key}:${options[key]}`);
+    for (var key in options) {
+        if (options[key]) state.push(key + ':' + options[key]);
     }
-    console.log('state string ', state.join(';'));
+    
     return Base64.encode(state.join(';'));
 };
 

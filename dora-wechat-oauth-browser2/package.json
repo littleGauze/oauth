@@ -1,13 +1,13 @@
 {
   "name": "dora-wechat-oauth-browser2",
-  "version": "0.8.7",
+  "version": "1.0.1",
   "author": {
-    "name": "littleGauze",
+    "name": "littlegauze",
     "email": "810483824@qq.com"
   },
   "description": "wechat oauth",
   "dependencies": {
-    "dora-oauth-browser2": "^1.0",
+    "dora-oauth-browser2": "^1.0.0",
     "querystring": "^0.2.0"
   },
   "devDependencies": {
@@ -30,14 +30,14 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha",
-    "prepublishOnly": "npm run lint && npm test"
+    "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/becooltech/oauth.git"
+    "url": "git+https://github.com/littleGauze/oauth.git"
   },
   "bugs": {
-    "url": "https://github.com/becooltech/oauth/issues"
+    "url": "https://github.com/littleGauze/oauth/issues"
   },
-  "homepage": "https://github.com/becooltech/oauth#readme"
+  "homepage": "https://github.com/littleGauze/oauth#readme"
 }

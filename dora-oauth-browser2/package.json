@@ -1,9 +1,9 @@
 {
   "author": {
-    "name": "littleGauze",
+    "name": "littlegauze",
     "email": "810483824@qq.com"
   },
-  "version": "1.0",
+  "version": "1.0.3",
   "bundleDependencies": false,
   "deprecated": false,
   "description": "",
@@ -30,14 +30,14 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha",
-    "prepublishOnly": "npm run lint && npm test"
+    "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/becooltech/oauth.git"
+    "url": "git+https://github.com/littleGauze/oauth.git"
   },
   "bugs": {
-    "url": "https://github.com/becooltech/oauth/issues"
+    "url": "https://github.com/littleGauze/oauth/issues"
   },
-  "homepage": "https://github.com/becooltech/oauth#readme"
+  "homepage": "https://github.com/littleGauze/oauth#readme"
 }

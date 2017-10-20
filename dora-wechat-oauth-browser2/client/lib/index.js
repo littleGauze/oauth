@@ -23,9 +23,10 @@ function WechatOAuth (appId, options) {
 
 OAuth.inherits(WechatOAuth, OAuth);
 
-WechatOAuth.prototype.encodeState = function (credentialToken, loginStyle, redirectUrl, options = {}) {
-    let obj = {};
-    Object.keys(options).forEach(key => {
+WechatOAuth.prototype.encodeState = function (credentialToken, loginStyle, redirectUrl, options) {
+    options = options || {};
+	var obj = {};
+    Object.keys(options).forEach(function (key) {
         if (!['scope', 'loginStyle', 'redirectUrl'].includes(key)) {
             obj[key] = options[key];
         }
